@@ -1,0 +1,7 @@
+scheme,level,classical_security_bits,public_key_bytes,ciphertext_bytes,log2_failure_probability,failures_in_100000,keygen_kcycles,encap_kcycles,decap_kcycles
+ML-KEM,1,115,800,768,-139,0,80,93,122
+ML-KEM,3,182,1184,1088,-164,0,134,148,185
+ML-KEM,5,255,1568,1568,-174,0,210,234,283
+eMLKEM,1,115,544,672,-13.5,7,75,107,38
+eMLKEM,3,182,800,928,-13.8,7,129,168,48
+eMLKEM,5,255,1184,1152,-12.1,24,197,245,60

@@ -1,0 +1,18 @@
+Artifact licensing notice
+=========================
+
+The standalone KEM implementation in standalone_emlkem/ is derived from the
+pq-crystals Kyber reference implementation and is offered under the terms in
+standalone_emlkem/LICENSE (public domain/CC0 or Apache License 2.0).
+
+The files in strongswan_6.0.4_inc/ are modifications relative to strongSwan
+commit 6856bfe and retain applicable upstream copyright and license notices.
+Most of strongSwan is licensed under GNU GPL version 2 or later; see the
+COPYING file and per-file notices at that upstream revision for details:
+https://github.com/strongswan/strongswan/blob/6856bfe/COPYING
+
+Experiment scripts, documentation, configuration templates, and measurement
+data added for this artifact are made available under CC0 1.0 Universal:
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Third-party files retain their original copyright and license notices.

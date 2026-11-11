@@ -1,0 +1,24 @@
+direction,category,field,size_bytes
+initiator_to_responder,common,SPI,16
+initiator_to_responder,common,Next Payload,1
+initiator_to_responder,common,Version,1
+initiator_to_responder,common,Exchange Type,1
+initiator_to_responder,common,Flags,1
+initiator_to_responder,common,Message ID,4
+initiator_to_responder,common,Length,4
+initiator_to_responder,common,SA,48
+initiator_to_responder,common,KE Header,8
+initiator_to_responder,common,Nonce,36
+initiator_to_responder,notify,NAT_DETECTION_SOURCE_IP,28
+initiator_to_responder,notify,NAT_DETECTION_DESTINATION_IP,28
+initiator_to_responder,notify,IKEV2_FRAGMENTATION_SUPPORTED,8
+initiator_to_responder,notify,SIGNATURE_HASH_ALGORITHMS,16
+initiator_to_responder,notify,REDIRECT_SUPPORTED,8
+responder_to_initiator,common,Common fields through Nonce,120
+responder_to_initiator,notify,NAT_DETECTION_SOURCE_IP,28
+responder_to_initiator,notify,NAT_DETECTION_DESTINATION_IP,28
+responder_to_initiator,notify,IKEV2_FRAGMENTATION_SUPPORTED,8
+responder_to_initiator,notify,SIGNATURE_HASH_ALGORITHMS,16
+responder_to_initiator,notify,Certificate Request,25
+responder_to_initiator,notify,CHILDLESS_IKEV2_SUPPORTED,8
+responder_to_initiator,notify,MULTIPLE_AUTH_SUPPORTED,8

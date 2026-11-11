@@ -1,0 +1,35 @@
+connections {
+  ikev2-test {
+    version = 2
+    proposals = @PROPOSAL@
+    remote_addrs = @RESPONDER_IPV6@
+
+    local {
+      auth = pubkey
+      certs = clientCert.pem
+      id = initiator
+    }
+    remote {
+      auth = pubkey
+      id = responder
+    }
+  }
+
+  # Keep inbound IPv6 SSH management traffic outside IPsec processing.
+  bypass-ssh {
+    children {
+      bypass-ssh {
+        local_ts = ::/0[tcp/22]
+        remote_ts = ::/0[tcp]
+        mode = pass
+        start_action = trap
+      }
+    }
+  }
+}
+
+secrets {
+  private {
+    file = clientKey.pem
+  }
+}

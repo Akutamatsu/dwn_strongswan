@@ -1,0 +1,17 @@
+link,route,ttl,rtt_ms,scheme,data_file,requested_iterations,successful_samples,udp_failures,decryption_retries,handshake_failures,notes
+a,route-a,59,23.1,ecp384,ecdh_bj_sh.json,10000,10001,0,0,0,reference log contained one pre-loop successful session
+a,route-a,59,23.1,emlkem768,emlkem_bj_sh.json,10000,10000,0,2,0,
+a,route-a,59,23.1,mlkem1024,mlkem1024_bj_sh.json,5000,5000,0,0,0,
+a,route-a,59,23.1,emlkem1024,emlkem1024_bj_sh.json,5000,5000,0,2,0,
+b,route-b,44,287.0,ecp384,ecdh_bj_kr.json,1000,1000,0,0,0,
+b,route-b,44,287.0,emlkem768,emlkem_bj_kr.json,1000,1000,0,0,0,
+b,route-b,44,287.0,mlkem1024,mlkem1024_bj_kr.json,1000,1000,0,0,0,
+b,route-b,44,287.0,emlkem1024,emlkem1024_bj_kr.json,1000,1000,0,0,0,
+c,route-c,248,338.9,ecp384,ecdh_bj_sg.json,1000,1000,0,0,0,
+c,route-c,248,338.9,emlkem768,emlkem_bj_sg.json,1000,1000,0,0,0,
+c,route-c,248,338.9,mlkem1024,,1000,0,,,,route unreachable for fragmented ML-KEM-1024
+c,route-c,248,338.9,emlkem1024,emlkem1024_bj_sg.json,1000,1000,0,0,0,
+d,route-d,44,249.4,ecp384,ecdh_uk_sh.json,1000,999,1,0,1,
+d,route-d,44,249.4,emlkem768,emlkem_uk_sh.json,1000,998,2,0,2,
+d,route-d,44,249.4,mlkem1024,mlkem1024_uk_sh.json,1000,968,32,0,32,
+d,route-d,44,249.4,emlkem1024,emlkem1024_uk_sh.json,1000,999,1,1,1,
